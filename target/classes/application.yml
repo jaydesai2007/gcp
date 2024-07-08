@@ -1,0 +1,21 @@
+server:
+  port: 8090
+
+gcp:
+  config:
+    file: myproject-241713.json
+  project:
+    id: myproject-241713
+  bucket:
+    id: testdigvijay
+  dir:
+    name: dev
+
+logging:
+  level:
+    org.springframework: ERROR
+    com.app: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
+  file: app.log
